@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="text-2xl flex text-white mb-5 bg-teal-600 font-semibold">
+      <div class="max-w-4xl">
+        <div class="flex py-8 px-2 items-center space-x-2 mx-6">
+          <span
+            class="-mb-1 shadow-lg shadow-amber-400 bg-transparent rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
+              />
+            </svg>
+          </span>
+          <h1 class="text-white">Movie Fight</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Container -->
+    <div class="w-full">
+      <div
+        id="columns"
+        class="
+          flex
+          mt-2
+          mx-2
+          flex-col
+          lg:flex-row
+          w-auto
+          my-2
+          lg:space-x-6 lg:space-y-0
+          space-y-4
+          justify-around
+        "
+      >
+        <div id="column1" class="w-full">
+          <div id="left-autocomplete" class="w-full"></div>
+          <div id="left-summary" class="mx-4"></div>
+        </div>
+
+        <div id="column2" class="w-full">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="tut"
+      class="
+        text-center
+        w-1/2
+        text-white
+        rounded-md
+        bg-teal-500
+        mx-auto
+        px-4
+        py-2
+      "
+    >
+      <h1 class="text-3xl font-semibold">tutorial here</h1>
+      <p class="text-xl">lets go</p>
+    </div>
+
+    <script src="./src/utils.js"></script>
+    <script src="./src/autoComplete.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

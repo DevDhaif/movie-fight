@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Full Container -->
+    <div class="bg-gray-500">
+      <!-- Header -->
+      <header
+        class="
+          text-4xl
+          py-6
+          px-4
+          items-center
+          flex
+          space-x-4
+          w-full
+          text-white
+          mb-3
+          bg-teal-600
+          font-semibold
+        "
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
+            />
+          </svg>
+        </div>
+        <h1 class="text-white">Movie Fight</h1>
+      </header>
+
+      <!-- Movies Container -->
+      <div id="container" class="w-full mx-4">
+        <!-- Results Container -->
+        <div id="columns" class="flex flex-col">
+          <!-- First Col -->
+          <div id="column1" class="my-2">
+            <div id="left-autocomplete">
+              <input
+                class="searchBtn"
+                type="text"
+                name=""
+                id="search1"
+                placeholder="search here"
+              />
+              
+                <!-- First Results -->
+                <div class="flex flex-col space-y-2 mt-2">
+                  <div class="inline-flex space-x-2">
+                    <img
+                      src="https://via.placeholder.com/600/501fe1"
+                      class="w-12 h-12"
+                    />
+                    <p>Yessdsds Man</p>
+                    <p>2017</p>
+                  </div>
+                  <div class="inline-flex space-x-2 my-1">
+                    <img
+                      src="https://via.placeholder.com/600/501fe1"
+                      class="w-12 h-12"
+                    />
+                    <p>Yes Man</p>
+                    <p>2017</p>
+                  </div>
+                </div>
+                <!-- End Of First Results -->
+              </div>
+              <div id="left-summary"></div>
+            </div>
+          
+          <!-- End OF First Col 1 -->
+
+          <!-- Second Col -->
+          <div id="column2">
+            <!-- Second AutComplete  -->
+            <div id="right-autocomplete flex flex-col">
+              <div>
+                <input
+                  class="searchBtn"
+                  type="text"
+                  name=""
+                  id="search1"
+                  placeholder="search here"
+                />
+                <!-- First DropDown -->
+                
+              </div>
+              <!-- Second Results -->
+              <div class="flex flex-col space-y-2 mt-2">
+                <div class="inline-flex space-x-2">
+                  <img
+                    src="https://via.placeholder.com/600/501fe1"
+                    class="w-12 h-12"
+                  />
+                  <p>Yes Man</p>
+                  <p>2017</p>
+                </div>
+                <div class="inline-flex space-x-2 my-1">
+                  <img
+                    src="https://via.placeholder.com/600/501fe1"
+                    class="w-12 h-12"
+                  />
+                  <p>Yes Man</p>
+                  <p>2017</p>
+                </div>
+              </div>
+              <!-- End Of Second Results -->
+            </div>
+            <!-- End Of Second AutoComplete -->
+            <div id="right-summary"></div>
+          </div>
+        </div>
+          <!-- End Of Second Col -->
+        </div>
+        <div id="tut">
+          <h1 class="text-3xl font-semibold">tutorial here</h1>
+          <p class="text-xl">lets go</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
